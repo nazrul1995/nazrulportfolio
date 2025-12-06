@@ -32,7 +32,7 @@ const Hero = () => {
                 <div className="space-y-8 hero-text">
                     <div>
                         <p className="text-lg">Hi all. I am</p>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-slate-800 dark:text-white my-2">Micheal Weaver</h1>
+                        <h1 className="text-5xl lg:text-6xl font-bold text-slate-800 dark:text-white my-2">Narul Islam</h1>
                         <p className="text-2xl text-blue-light">&gt; Front-end developer</p>
                     </div>
                     <div className="text-sm md:text-base">
@@ -42,7 +42,7 @@ const Hero = () => {
                             <span className="text-blue-light">const</span>
                             <span className="text-green-light"> githubLink</span>
                             <span> = </span>
-                            <a class="text-red-light underline hover:no-underline" href="https://github.com/example/url" target="_blank">"https://github.com/example/url"</a>
+                            <a class="text-red-light underline hover:no-underline" href="https://github.com/nazrul1995" target="_blank">"https://github.com/nazrul1995"</a>
                         </p>
                     </div>
                 </div>

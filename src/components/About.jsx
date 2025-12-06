@@ -19,7 +19,7 @@ const About = () => {
                             <p><span className="text-gray-500">// Personal-Info.js</span></p>
                             <br />
                             <p><span className="text-purple-400">const</span> <span className="text-green-400">aboutMe</span> <span className="text-purple-400">=</span> {'{'}</p>
-                            <p className="ml-4"><span className="text-blue-400">name</span>: <span className="text-red-400">'Michael Weaver'</span>,</p>
+                            <p className="ml-4"><span className="text-blue-400">name</span>: <span className="text-red-400">'Nazrul Islam'</span>,</p>
                             <p className="ml-4"><span className="text-blue-400">title</span>: <span className="text-red-400">'Front-end Developer'</span>,</p>
                             <p className="ml-4"><span className="text-blue-400">bio</span>: <span className="text-red-400">'I build beautiful and responsive web applications. My journey started with a fascination for how things work, which naturally led me to the endless puzzle of code. I thrive on turning complex problems into simple, elegant solutions.'</span>,</p>
                             <p className="ml-4"><span className="text-blue-400">passions</span>: [<span className="text-red-400">'pixel-perfect design'</span>, <span className="text-red-400">'clean code'</span>, <span className="text-red-400">'user experience'</span>]</p>
@@ -27,7 +27,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-center lg:items-end">
-                        <img alt="Professional photo of Michael Weaver" className="w-full max-w-sm rounded-lg border-2 border-slate-700/50 dark:border-slate-700/50 shadow-lg mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvq0uDUIq7dsvKxWeAYEngt5jf1JqveF6ISksQINwyw2gStJzdH3z5nzRFkXmPXxqucYWd2PnceKzYgnxZgQi6p3pzacHjhxc8_7g5onGG8ikwgypOchEK3oEYphSr5IizViegXUSdbSeKuzyTmj4enj7EcVwbv0LU_oUEzcbXg0kz_gWI1ebHlM0jvOdqoTD-vK3t5tG9gKTqgbg9Hx78mmJHcxsaWYuFM-azYA-PVQ9LzYZYzJoyLrHHoPVxKzHKVSidfjaNRCw" />
+                        <img alt="Professional photo of Michael Weaver" className="w-full max-w-sm rounded-lg border-2 border-slate-700/50 dark:border-slate-700/50 shadow-lg mb-8" src="https://i.ibb.co.com/jPfYxsGQ/Nazrul-Islam.png" />
                         <div className="w-full max-w-sm bg-slate-800/20 dark:bg-slate-800/20 border border-slate-700/50 dark:border-slate-700/50 rounded-lg p-4 text-sm font-mono">
                             <p className="text-gray-500">// Fun fact</p>
                             <p className="text-slate-300 dark:text-slate-300">&gt; When I'm not coding, you can find me exploring new hiking trails or trying to brew the perfect cup of coffee. It's all about finding the right algorithm!</p>
