@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Micheal Weaver - Front-end Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <style>
+        .icon-social path {
+            fill: #607B96;
+        }
+
+        .icon-social:hover path {
+            fill: #E5E9F0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FEA55F", // Orange from buttons/highlights
+                        "background-light": "#E5E9F0", // Light color for text/elements in dark mode
+                        "background-dark": "#011627", // Dark blue background
+                        "slate-light": "#607B96", // Grey text/borders
+                        "green-light": "#43D9AD", // Green in game/code
+                        "blue-light": "#4D5BCE", // Blue for '>' symbol
+                        "red-light": "#E99287", // Red for string in code
+                        "border-light": "#1E2D3D",
+                    },
+                    fontFamily: {
+                        display: ["Fira Code", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-700 dark:text-slate-light antialiased">
+    <div class="flex flex-col min-h-screen">
+        <header class="border-b border-border-light text-slate-700 dark:text-slate-light">
+            <div class="container mx-auto px-8">
+                <nav class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a class="py-4 pr-8 text-slate-800 dark:text-white" href="#">michael-weaver</a>
+                        <div class="hidden md:flex h-full">
+                            <a class="border-x border-border-light py-4 px-8 text-white bg-slate-700/[.15] dark:bg-transparent border-t-2 border-t-primary"
+                                href="#">_hello</a>
+                            <a class="border-r border-border-light py-4 px-8 hover:text-white transition-colors duration-200"
+                                href="#">_about-me</a>
+                            <a class="border-r border-border-light py-4 px-8 hover:text-white transition-colors duration-200"
+                                href="#">_projects</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex">
+                        <a class="border-l border-border-light py-4 px-8 hover:text-white transition-colors duration-200"
+                            href="#">_contact-me</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="p-4">
+                            <span class="material-icons-outlined">menu</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-grow flex items-center justify-center container mx-auto px-8 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-lg">Hi all. I am</p>
+                        <h1 class="text-5xl lg:text-6xl font-bold text-slate-800 dark:text-white my-2">Micheal Weaver
+                        </h1>
+                        <p class="text-2xl text-blue-light">&gt; Front-end developer</p>
+                    </div>
+                    <div class="text-sm md:text-base">
+                        <p class="text-slate-500 dark:text-slate-light">// complete the game to continue</p>
+                        <p class="text-slate-500 dark:text-slate-light">// find my profile on Github:</p>
+                        <p class="mt-2">
+                            <span class="text-blue-light">const</span>
+                            <span class="text-green-light"> githubLink</span>
+                            <span> = </span>
+                            <a class="text-red-light underline hover:no-underline" href="https://github.com/example/url"
+                                target="_blank">"https://github.com/example/url"</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div
+                        class="bg-gradient-to-br from-green-light/10 to-blue-light/10 border border-border-light rounded-lg p-1 max-w-md w-full relative">
+                        <div
+                            class="absolute -top-2 -left-2 w-4 h-4 rounded-full bg-border-light border-4 border-background-dark">
+                        </div>
+                        <div
+                            class="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-border-light border-4 border-background-dark">
+                        </div>
+                        <div
+                            class="absolute -bottom-2 -left-2 w-4 h-4 rounded-full bg-border-light border-4 border-background-dark">
+                        </div>
+                        <div
+                            class="absolute -bottom-2 -right-2 w-4 h-4 rounded-full bg-border-light border-4 border-background-dark">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+                            <div
+                                class="bg-[#011423] rounded-lg flex items-center justify-center p-8 aspect-square relative overflow-hidden">
+                                <div class="absolute inset-0 bg-grid-pattern opacity-10"
+                                    style="--grid-color: #1E2D3D; --grid-size: 20px; background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px); background-size: var(--grid-size) var(--grid-size);">
+                                </div>
+                                <div class="relative w-full h-full flex items-center justify-center">
+                                    <div class="relative w-16 h-24">
+                                        <div
+                                            class="absolute top-0 right-4 w-2 h-2 bg-green-light rounded-full shadow-[0_0_8px_rgba(67,217,173,0.7)]">
+                                        </div>
+                                        <div class="absolute top-2 right-4 w-2 h-14 bg-green-light"></div>
+                                        <div class="absolute bottom-6 right-4 w-10 h-2 bg-green-light"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="absolute bottom-4 bg-primary text-background-dark font-medium py-2 px-4 rounded hover:bg-opacity-90 transition-colors">start-game</button>
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <div>
+                                    <p class="text-xs text-slate-500 dark:text-slate-light mb-2">// use keyboard</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-light mb-4">// arrows to play</p>
+                                    <div class="grid grid-cols-3 gap-2 w-32 mx-auto">
+                                        <div class="col-start-2 flex justify-center">
+                                            <button
+                                                class="bg-[#011423] w-8 h-8 flex items-center justify-center rounded border border-border-light"><span
+                                                    class="material-icons-outlined text-sm">keyboard_arrow_up</span></button>
+                                        </div>
+                                        <button
+                                            class="bg-[#011423] w-8 h-8 flex items-center justify-center rounded border border-border-light"><span
+                                                class="material-icons-outlined text-sm">keyboard_arrow_left</span></button>
+                                        <button
+                                            class="bg-[#011423] w-8 h-8 flex items-center justify-center rounded border border-border-light"><span
+                                                class="material-icons-outlined text-sm">keyboard_arrow_down</span></button>
+                                        <button
+                                            class="bg-[#011423] w-8 h-8 flex items-center justify-center rounded border border-border-light"><span
+                                                class="material-icons-outlined text-sm">keyboard_arrow_right</span></button>
+                                    </div>
+                                    <div class="mt-8">
+                                        <p class="text-xs text-slate-500 dark:text-slate-light mb-3">// food left</p>
+                                        <div class="grid grid-cols-5 gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-green-light rounded-full shadow-[0_0_8px_rgba(67,217,173,0.7)]">
+                                            </div>
+                                            <div
+                                                class="w-4 h-4 bg-green-light rounded-full shadow-[0_0_8px_rgba(67,217,173,0.7)]">
+                                            </div>
+                                            <div
+                                                class="w-4 h-4 bg-green-light rounded-full shadow-[0_0_8px_rgba(67,217,173,0.7)]">
+                                            </div>
+                                            <div
+                                                class="w-4 h-4 bg-green-light rounded-full shadow-[0_0_8px_rgba(67,217,173,0.7)]">
+                                            </div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                            <div class="w-4 h-4 bg-green-light/20 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="self-end bg-slate-700 dark:bg-border-light text-slate-200 dark:text-white py-2 px-4 rounded hover:bg-slate-600 dark:hover:bg-slate-light/30 transition-colors">skip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <section class="flex-grow">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-4">
+                        <h1 class="text-4xl sm:text-5xl font-bold text-slate-100 dark:text-slate-100">_about-me</h1>
+                        <div class="w-24 h-px bg-primary"></div>
+                    </div>
+                    <div
+                        class="bg-slate-800/20 dark:bg-slate-800/20 border border-slate-700/50 dark:border-slate-700/50 rounded-lg p-6 text-sm text-slate-400 dark:text-slate-400 leading-relaxed font-mono">
+                        <div class="flex items-center pb-4 mb-4 border-b border-slate-700/50 dark:border-slate-700/50">
+                            <span class="h-3 w-3 rounded-full bg-red-500 mr-2"></span>
+                            <span class="h-3 w-3 rounded-full bg-yellow-500 mr-2"></span>
+                            <span class="h-3 w-3 rounded-full bg-green-500"></span>
+                        </div>
+                        <p><span class="text-gray-500">// Personal-Info.js</span></p>
+                        <br />
+                        <p><span class="text-purple-400">const</span> <span class="text-green-400">aboutMe</span> <span
+                                class="text-purple-400">=</span> {</p>
+                        <p class="ml-4"><span class="text-blue-400">name</span>: <span class="text-red-400">'Michael
+                                Weaver'</span>,</p>
+                        <p class="ml-4"><span class="text-blue-400">title</span>: <span class="text-red-400">'Front-end
+                                Developer'</span>,</p>
+                        <p class="ml-4"><span class="text-blue-400">bio</span>: <span class="text-red-400">'I build
+                                beautiful and responsive web applications. My journey started with a fascination for how
+                                things work, which naturally led me to the endless puzzle of code. I thrive on turning
+                                complex problems into simple, elegant solutions.'</span>,</p>
+                        <p class="ml-4"><span class="text-blue-400">passions</span>: [<span
+                                class="text-red-400">'pixel-perfect design'</span>, <span class="text-red-400">'clean
+                                code'</span>, <span class="text-red-400">'user experience'</span>]</p>
+                        <p>};</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center lg:items-end">
+                    <img alt="Professional photo of Michael Weaver"
+                        class="w-full max-w-sm rounded-lg border-2 border-slate-700/50 dark:border-slate-700/50 shadow-lg mb-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvq0uDUIq7dsvKxWeAYEngt5jf1JqveF6ISksQINwyw2gStJzdH3z5nzRFkXmPXxqucYWd2PnceKzYgnxZgQi6p3pzacHjhxc8_7g5onGG8ikwgypOchEK3oEYphSr5IizViegXUSdbSeKuzyTmj4enj7EcVwbv0LU_oUEzcbXg0kz_gWI1ebHlM0jvOdqoTD-vK3t5tG9gKTqgbg9Hx78mmJHcxsaWYuFM-azYA-PVQ9LzYZYzJoyLrHHoPVxKzHKVSidfjaNRCw" />
+                    <div
+                        class="w-full max-w-sm bg-slate-800/20 dark:bg-slate-800/20 border border-slate-700/50 dark:border-slate-700/50 rounded-lg p-4 text-sm font-mono">
+                        <p class="text-gray-500">// Fun fact</p>
+                        <p class="text-slate-300 dark:text-slate-300">&gt; When I'm not coding, you can find me
+                            exploring new hiking trails or trying to brew the perfect cup of coffee. It's all about
+                            finding the right algorithm!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex-grow container mx-auto px-6 py-16 flex items-center justify-center">
+        <div class="w-full max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col space-y-4">
+                    <h1 class="text-5xl font-bold text-text-highlight-light dark:text-text-highlight-dark mb-2">My
+                        Skills</h1>
+                    <p class="text-lg">
+                        <span class="text-accent-light dark:text-accent-dark">&gt;</span> Technologies I work with
+                    </p>
+                    <div class="text-sm text-comment-light dark:text-comment-dark pt-8 space-y-2">
+                        <p>// Grouped by category for clarity</p>
+                        <p>// Always learning and expanding my toolkit</p>
+                    </div>
+                </div>
+                <div
+                    class="border border-border-light dark:border-border-dark rounded-lg p-6 bg-white/5 dark:bg-black/10 backdrop-blur-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+                        <div>
+                            <h3 class="font-bold text-primary mb-3">Languages</h3>
+                            <ul class="space-y-2 text-text-highlight-light dark:text-text-highlight-dark">
+                                <li>JavaScript (ES6+)</li>
+                                <li>TypeScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3 / SCSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-3">Frameworks</h3>
+                            <ul class="space-y-2 text-text-highlight-light dark:text-text-highlight-dark">
+                                <li>React</li>
+                                <li>Next.js</li>
+                                <li>Vue.js</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-3">Tools &amp; Platforms</h3>
+                            <ul class="space-y-2 text-text-highlight-light dark:text-text-highlight-dark">
+                                <li>Git &amp; GitHub</li>
+                                <li>Figma</li>
+                                <li>Webpack</li>
+                                <li>Vercel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-3">Backend &amp; DB</h3>
+                            <ul class="space-y-2 text-text-highlight-light dark:text-text-highlight-dark">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex-grow container mx-auto px-6 py-16">
+        <div class="flex items-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800 dark:text-white mr-4"><span
+                    class="text-primary">/</span>projects</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">// Things I've built so far</p>
+        </div>
+        <div x-data="{ activeTab: 'all' }">
+            <div class="flex border-b border-gray-300/20 dark:border-gray-100/10 mb-8">
+                <button
+                    :class="{ 'text-white border-primary': activeTab === 'all', 'text-gray-400 border-transparent': activeTab !== 'all' }"
+                    @click="activeTab = 'all'"
+                    class="px-4 py-2 border-b-2 hover:text-white transition-colors">All</button>
+                <button
+                    :class="{ 'text-white border-primary': activeTab === 'react', 'text-gray-400 border-transparent': activeTab !== 'react' }"
+                    @click="activeTab = 'react'"
+                    class="px-4 py-2 border-b-2 hover:text-white transition-colors">React</button>
+                <button
+                    :class="{ 'text-white border-primary': activeTab === 'vue', 'text-gray-400 border-transparent': activeTab !== 'vue' }"
+                    @click="activeTab = 'vue'"
+                    class="px-4 py-2 border-b-2 hover:text-white transition-colors">Vue</button>
+                <button
+                    :class="{ 'text-white border-primary': activeTab === 'angular', 'text-gray-400 border-transparent': activeTab !== 'angular' }"
+                    @click="activeTab = 'angular'"
+                    class="px-4 py-2 border-b-2 hover:text-white transition-colors">Angular</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-300/20 dark:border-gray-100/10 rounded-lg bg-gray-50/5 dark:bg-gray-500/5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    x-show="activeTab === 'all' || activeTab === 'react'">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+                            <div class="flex space-x-2">
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                        class="material-symbols-outlined">link</span></a>
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><svg
+                                        class="feather feather-github" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Project Chariot</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">A comprehensive dashboard for managing
+                            e-commerce logistics and tracking.</p>
+                        <div class="flex items-center text-xs text-gray-500 dark:text-gray-500">
+                            <span class="inline-block w-2 h-2 rounded-full bg-blue-400 mr-2"></span>
+                            <span>React</span>
+                            <span class="inline-block w-2 h-2 rounded-full bg-purple-400 ml-4 mr-2"></span>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-300/20 dark:border-gray-100/10 rounded-lg bg-gray-50/5 dark:bg-gray-500/5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    x-show="activeTab === 'all' || activeTab === 'vue'">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
+                            <div class="flex space-x-2">
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                        class="material-symbols-outlined">link</span></a>
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><svg
+                                        class="feather feather-github" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Portfolio V1</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">My first portfolio website, exploring
+                            creative designs and animations.</p>
+                        <div class="flex items-center text-xs text-gray-500 dark:text-gray-500">
+                            <span class="inline-block w-2 h-2 rounded-full bg-green-400 mr-2"></span>
+                            <span>Vue</span>
+                            <span class="inline-block w-2 h-2 rounded-full bg-yellow-400 ml-4 mr-2"></span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-300/20 dark:border-gray-100/10 rounded-lg bg-gray-50/5 dark:bg-gray-500/5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    x-show="activeTab === 'all' || activeTab === 'angular'">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">camera</span>
+                            <div class="flex space-x-2">
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                        class="material-symbols-outlined">link</span></a>
+                                <a class="text-gray-400 hover:text-primary transition-colors" href="#"><svg
+                                        class="feather feather-github" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Photo Gallery App</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">A responsive image gallery with lazy
+                            loading and filtering capabilities.</p>
+                        <div class="flex items-center text-xs text-gray-500 dark:text-gray-500">
+                            <span class="inline-block w-2 h-2 rounded-full bg-red-500 mr-2"></span>
+                            <span>Angular</span>
+                            <span class="inline-block w-2 h-2 rounded-full bg-indigo-400 ml-4 mr-2"></span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex-grow container mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            <div class="flex flex-col space-y-8">
+                <h1 class="text-3xl md:text-5xl font-bold">Contact Me</h1>
+                <p class="text-text-secondary-light dark:text-text-secondary-dark">I'm interested in freelance
+                    opportunities. However, if you have other requests or questions, don't hesitate to use the form.</p>
+                <form class="space-y-6">
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+                            for="name">_name:</label>
+                        <input
+                            class="w-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-DEFAULT focus:ring-primary focus:border-primary text-text-primary-light dark:text-text-primary-dark px-3 py-2"
+                            id="name" name="name" type="text" />
+                    </div>
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+                            for="email">_email:</label>
+                        <input
+                            class="w-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-DEFAULT focus:ring-primary focus:border-primary text-text-primary-light dark:text-text-primary-dark px-3 py-2"
+                            id="email" name="email" type="email" />
+                    </div>
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+                            for="subject">_subject:</label>
+                        <input
+                            class="w-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-DEFAULT focus:ring-primary focus:border-primary text-text-primary-light dark:text-text-primary-dark px-3 py-2"
+                            id="subject" name="subject" type="text" />
+                    </div>
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+                            for="message">_message:</label>
+                        <textarea
+                            class="w-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-DEFAULT focus:ring-primary focus:border-primary text-text-primary-light dark:text-text-primary-dark px-3 py-2"
+                            id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button
+                            class="px-4 py-2 bg-primary text-black rounded-DEFAULT font-medium hover:bg-opacity-90 transition-colors duration-300"
+                            type="submit">submit-message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden md:flex flex-col space-y-4 text-text-secondary-light dark:text-text-secondary-dark">
+                <h2 class="text-lg text-text-primary-light dark:text-text-primary-dark">// alternative contact info</h2>
+                <div class="flex items-center space-x-3">
+                    <span class="material-symbols-outlined text-xl">mail</span>
+                    <span>michael.weaver@email.com</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="material-symbols-outlined text-xl">call</span>
+                    <span>(555) 123-4567</span>
+                </div>
+                <h2 class="text-lg text-text-primary-light dark:text-text-primary-dark pt-8">// code snippet</h2>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-4 text-sm font-mono">
+                    <pre><code class="language-javascript"><span class="text-code-purple">const</span> <span class="text-code-blue">button</span> = <span class="text-code-blue">document</span>.<span class="text-code-green">querySelector</span>(<span class="text-code-red">'#sendBtn'</span>);
+<span class="text-code-purple">const</span> <span class="text-code-blue">message</span> = {
+  <span class="text-code-green">name</span>: <span class="text-code-red">"your_name"</span>,
+  <span class="text-code-green">email</span>: <span class="text-code-red">"your_email@example.com"</span>,
+  <span class="text-code-green">message</span>: <span class="text-code-red">"Hey! Just wanted to connect."</span>,
+  <span class="text-code-green">date</span>: <span class="text-code-red">"Thu 21 Apr"</span>
+}
+<span class="text-code-blue">button</span>.<span class="text-code-green">addEventListener</span>(<span class="text-code-red">'click'</span>, () =&gt; {
+  <span class="text-code-blue">form</span>.<span class="text-code-green">send</span>(<span class="text-code-blue">message</span>);
+});</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-border-light text-slate-700 dark:text-slate-light">
+        <div class="container mx-auto px-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="py-4 pr-6">find me in:</span>
+                    <a aria-label="X profile"
+                        class="border-l border-border-light p-4 icon-social hover:bg-border-light/50 transition-colors duration-200"
+                        href="#">
+                        <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298l13.312 17.404z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a aria-label="LinkedIn profile"
+                        class="border-x border-border-light p-4 icon-social hover:bg-border-light/50 transition-colors duration-200"
+                        href="#">
+                        <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.447 20.452H17.13V14.97c0-1.301-.027-2.977-1.815-2.977-1.815 0-2.093 1.418-2.093 2.884v5.575H9.907V9.018h3.208v1.472h.045c.447-.848 1.54-1.736 3.168-1.736 3.388 0 4.013 2.23 4.013 5.129v6.57zM5.623 7.54C4.383 7.54 3.39 6.55 3.39 5.31S4.383 3.08 5.623 3.08c1.24 0 2.234 1.002 2.234 2.23s-.994 2.23-2.234 2.23zM7.232 20.452H4.013V9.018h3.22V20.452z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <a class="hidden md:flex items-center gap-2 border-l border-border-light pl-6 py-4 hover:text-white transition-colors duration-200"
+                    href="#">
+                    @michealw
+                    <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4-9.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5v-5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
