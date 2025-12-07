@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import resumeFile from '../asstes/Nazrul-Islam-Resume.pdf';
+import PortfolioImg from '../asstes/Portfolio.png';
 
 const TECHS = ['MongoDB', 'Express', 'React', 'Node.js'];
 
@@ -85,16 +86,16 @@ const Hero = () => {
 
   return (
     <section ref={rootRef} id="home" className="flex-grow container mx-auto px-6 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         {/* Photo / visual column */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center">
           <div
             ref={imageEl}
-            className="w-44 sm:w-56 md:w-64 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border-light bg-white"
+            className="w-44 sm:w-56 md:w-64 rounded-2xl overflow-hidden shadow-2xl bg-transparent"
             aria-hidden="false"
           >
             {/* Add your professional photo to public/profile.jpg or change this path */}
-            <img src="/profile.jpg" alt="Nazrul Islam — profile" className="w-full h-full object-cover block" />
+            <img src={PortfolioImg} alt="Nazrul Islam — profile" className="w-full h-full object-cover block" />
           </div>
         </div>
 
@@ -172,22 +173,6 @@ const Hero = () => {
                   <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v13h-4V8zm7 0h3.8v1.8h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.8 2.6 4.8 6v7h-4V15.5c0-1.9 0-4.4-2.7-4.4-2.7 0-3.1 2.1-3.1 4.3V21H7V8z" />
                 </svg>
               </a>
-            </div>
-
-            {/* MERN badges */}
-            <div className="flex flex-wrap gap-2">
-              {TECHS.map((t, i) => (
-                <span
-                  key={t}
-                  ref={(el) => (badgeEls.current[i] = el)}
-                  className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm shadow-sm"
-                >
-                  <svg className="w-3 h-3 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="3" />
-                  </svg>
-                  {t}
-                </span>
-              ))}
             </div>
           </div>
         </div>

@@ -149,27 +149,6 @@ const About = () => {
                 <li>&gt; I favor accessibility and performance-first approaches.</li>
               </ul>
             </div>
-
-            <div
-              ref={(el) => (cardsRef.current[2] = el)}
-              className="w-full max-w-sm bg-white/50 dark:bg-slate-900/40 border border-slate-200/10 dark:border-slate-700/40 rounded-lg p-6"
-            >
-              <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-2">Quick stats</h3>
-              <div className="grid grid-cols-3 gap-3 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white">5+</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-300">projects</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white">4</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-300">tech</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white">∞</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-300">curiosity</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
