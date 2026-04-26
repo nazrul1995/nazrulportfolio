@@ -156,7 +156,6 @@ const Projects = () => {
                     <div className="absolute inset-0 flex items-end p-4">
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-white">{p.title}</h3>
-                        <p className="text-xs text-white/90 mt-1">{p.description}</p>
                       </div>
                       <div className="ml-3 flex-shrink-0 flex gap-2">
                         <IconLink href={p.demo} label="Live demo">
@@ -194,18 +193,8 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-
-                  <div className="flex items-center gap-2">
-                    {p.repoServer && (
-                      <a
-                        href={p.repoServer}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs px-3 py-1 rounded-md border border-border-light hover:bg-slate-50 dark:hover:bg-slate-800"
-                      >
-                        Server Repo
-                      </a>
-                    )}
+                </div>
+                <div className="flex items-center gap-2">
                     <button
                       onClick={() => setSelected(p)}
                       className="text-sm text-primary underline hover:no-underline"
@@ -214,12 +203,10 @@ const Projects = () => {
                       Details
                     </button>
                   </div>
-                </div>
-
-                <p className="text-sm text-slate-600 dark:text-slate-300">{p.description}</p>
               </div>
-            </article>
+            </article> 
           ))}
+          
         </div>
       </div>
 
